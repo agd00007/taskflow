@@ -1,0 +1,62 @@
+[
+  {
+    "id": "tsk-001",
+    "titulo": "Diseñar la página de inicio",
+    "descripcion": "Crear la propuesta visual de la pantalla principal.",
+    "asignadoA": "laura-martinez",
+    "prioridad": "alta",
+    "estado": "en_progreso",
+    "fechaLimite": "2026-10-20",
+    "etiquetas": ["UI", "Diseño"],
+    "creadaEn": "2026-09-16T10:00:00Z",
+    "actualizadaEn": "2026-09-16T10:00:00Z"
+  },
+  {
+    "id": "tsk-002",
+    "titulo": "Crear componentes principales",
+    "descripcion": "Desarrollar los componentes reutilizables de la aplicación.",
+    "asignadoA": "carlos-ruiz",
+    "prioridad": "alta",
+    "estado": "pendiente",
+    "fechaLimite": "2026-10-25",
+    "etiquetas": ["React", "Frontend"],
+    "creadaEn": "2026-09-16T10:05:00Z",
+    "actualizadaEn": "2026-09-16T10:05:00Z"
+  },
+  {
+    "id": "tsk-003",
+    "titulo": "Configurar almacenamiento local",
+    "descripcion": "Implementar la persistencia de tareas utilizando localStorage.",
+    "asignadoA": "ana-garcia",
+    "prioridad": "media",
+    "estado": "en_progreso",
+    "fechaLimite": "2026-10-28",
+    "etiquetas": ["React", "Storage"],
+    "creadaEn": "2026-09-16T10:10:00Z",
+    "actualizadaEn": "2026-09-16T10:10:00Z"
+  },
+  {
+    "id": "tsk-004",
+    "titulo": "Preparar estilos responsive",
+    "descripcion": "Adaptar la interfaz para escritorio y dispositivos móviles.",
+    "asignadoA": "laura-martinez",
+    "prioridad": "media",
+    "estado": "completada",
+    "fechaLimite": "2026-09-15",
+    "etiquetas": ["CSS", "Responsive"],
+    "creadaEn": "2026-09-10T09:00:00Z",
+    "actualizadaEn": "2026-09-15T12:00:00Z"
+  },
+  {
+    "id": "tsk-005",
+    "titulo": "Validar formulario de tareas",
+    "descripcion": "Comprobar los campos obligatorios antes de crear una tarea.",
+    "asignadoA": "carlos-ruiz",
+    "prioridad": "baja",
+    "estado": "pendiente",
+    "fechaLimite": "2026-11-02",
+    "etiquetas": ["Formularios", "Validación"],
+    "creadaEn": "2026-09-16T10:15:00Z",
+    "actualizadaEn": "2026-09-16T10:15:00Z"
+  }
+]

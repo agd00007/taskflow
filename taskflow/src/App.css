@@ -1,0 +1,241 @@
+.app {
+  background-color: rgb(220, 220, 220);
+  margin: 2px;
+}
+
+.titles {
+  display: flex;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  align-items: center;
+  gap: 10px;
+}
+
+.subtitle {
+  border-left: 4px solid rgb(198, 194, 194);
+  padding: 6px;
+}
+
+.title {
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  color: rgb(151, 236, 236);
+  text-align: left;
+}
+
+.newTag {
+  background-color: rgb(54, 92, 227);
+  border-radius: 5px;
+  height: 30px;
+  width: 120px;
+  margin-left: auto;
+  margin-right: 22px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Tarjetas resumen */
+
+.card span {
+  font-weight: 700;
+  font-size: 25px;
+}
+
+.card p {
+  color: grey;
+}
+
+.card-icon {
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(185, 176, 176);
+  border-radius: 50%;
+}
+
+.card-icon.clock {
+  background-color: rgb(239, 216, 125);
+  color: rgb(238, 158, 77);
+}
+
+.card-icon.loader {
+  background-color: rgb(186, 217, 235);
+  color: blue;
+}
+
+.card-icon.check {
+  background-color: rgb(157, 225, 157);
+  color: green;
+}
+
+/* Contenedor de filtros */
+
+.search-box input {
+  padding-left: 38px;
+}
+
+.filter p {
+  font-weight: 600;
+}
+
+/* Contenedor tarjetas */
+
+.taks-list {
+  flex: 1;
+  min-width: 0;
+}
+
+.title-card {
+  width: 100%;
+}
+
+.task-priority {
+  margin-right: 50px;
+}
+
+.alta {
+  background-color: rgb(236, 128, 128);
+  color: rgb(209, 54, 54);
+}
+
+.media {
+  background-color: rgb(245, 243, 213);
+  color: rgb(57, 54, 14);
+}
+
+.baja {
+  background-color: rgb(129, 189, 129);
+  color: green;
+}
+
+.en_progreso {
+  background-color: rgb(245, 243, 213) !important;
+  color: rgb(57, 54, 14) !important;
+}
+
+.completada {
+  background-color: rgb(129, 189, 129) !important;
+  color: green !important;
+}
+
+.pendiente {
+  background-color: grey !important;
+  color: rgb(46, 46, 46) !important;
+}
+
+.task-description {
+  color: rgb(110, 110, 110);
+}
+
+.priority-low,
+.priority-medium,
+.priority-high {
+  animation: priorityMove 1.5s ease-in-out infinite;
+  transition: transform 0.2s ease;
+}
+
+@keyframes priorityMove {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-3px);
+  }
+}
+.input {
+  display: none;
+}
+
+.priority-low:has(input:checked),
+.priority-medium:has(input:checked),
+.priority-high:has(input:checked) {
+  animation: none;
+  transform: scale(1.15);
+  font-weight: bold;
+}
+
+
+
+button {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.error-message {
+  display: block;
+  color: red;
+}
+
+/* Pantalla media */
+
+@media (max-width: 1024px) {
+  .filter {
+    width: 30%;
+  }
+
+  .summary-cards {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    min-width: 35%;
+  }
+
+  .new-task {
+    width: 75%;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .description-text {
+    width: 100%;
+  }
+}
+
+/* Pantallas pequeñas */
+
+@media (max-width: 768px) {
+  .task-panel {
+    flex-direction: column;
+  }
+
+  .filter {
+    width: 90%;
+  }
+
+  .filter-options {
+    width: 100%;
+  }
+
+  .summary-cards {
+    flex-wrap: wrap;
+  }
+
+  .new-task {
+    width: 90%;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .description-text {
+    width: 100%;
+  }
+}
